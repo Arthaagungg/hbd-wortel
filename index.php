@@ -36,12 +36,10 @@
 	<audio class="song" controls loop>
 		<source src="hbd.mp3">
 		</source>
-		Your browser isn't invited for super fun audio time.
 	</audio>
 	<div class="balloons text-center" id="b1">
 	</div>
 	<div class="balloons text-center" id="b2">
-		<h2 style="color:#0719D4;">B</h2>
 	</div>
 	<div class="balloons text-center" id="b3">
 		<h2 style="color:#D14D39;">D</h2>
@@ -66,7 +64,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<span class="close-abdul">&times;</span>
-				<p>Kepada Yth : <br> Sdri. Winda Devi <br> Yang Sedang Ber ulang tahun <br> di <br> Tempat.</p>
+				<p>Kepada Yth\ : <br> Sdri.  Devi <br> Yang Sedang Ber ulang tahun <br> di <br> Tempat.</p>
 			</div>
 			<div class="modal-body">
 				<p>wyatb ya win <br>
@@ -107,27 +105,9 @@
 				modalabdul.style.display = "none";
 			}
 		}
-		
-document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-    alert("Jangan jail ya gengs");
-});
-document.addEventListener("keydown", function(event) {
-    //jika tombol Ctrl + U ditekan
-    if (event.ctrlKey && event.keyCode === 85) {
-        //mencegah default action dari event
-        event.preventDefault();
-        //menampilkan pesan
-        alert("Jangan jail ya gengs");
-    }
-	else if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
-        event.preventDefault();
-        alert("Jangan jail ya gengs");
-    }
-});
 	</script>
 
-	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+	
 
 
 	<div class="container">
@@ -157,47 +137,26 @@ document.addEventListener("keydown", function(event) {
 				<img src="banner.png" class="bannar">
 			</div>
 		</div>
-
-		<div class="navbar navbar-fixed-bottom">
-
-			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<div class="envelope-wrapper">
-						<div class="close" id="envelope">
-							<div class="front flap"></div>
-							<div class="front pocket"></div>
-							<div class="letter">
-								<button class="btnp btns" id="turn_on">Open</button>
-								<div class="words line1">To : Wortel</div>
-								<div class="words line2">Yang Sedang Berulang Tahun</div>
-								<div class="words line3">Hari Ini.</div>
-								<div class="words line4"></div>
-							</div>
-							<div class="hearts">
-								<div class="heart a1"></div>
-								<div class="heart a2"></div>
-								<div class="heart a3"></div>
-							</div>
-						</div>
-					</div>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
-				</div>
-
-
+		
+	</div>
+	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+	<div class="envelope-wrapper">
+		<div class="close" id="envelope">
+			<div class="front flap"></div>
+			<div class="front pocket"></div>
+			<div class="letter">
+				<button class="btnp btns" id="turn_on">Open</button>
+				<div class="words line1">To : Wortel</div>
+				<div class="words line2">Yang Sedang Berulang Tahun</div>
+				<div class="words line3">Hari Ini.</div>
+				<div class="words line4"></div>
 			</div>
-			<!-- <div class="col-md-2">
+			<div class="hearts">
+				<div class="heart a1"></div>
+				<div class="heart a2"></div>
+				<div class="heart a3"></div>
 			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
 		</div>
-
-
 	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

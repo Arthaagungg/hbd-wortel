@@ -19,17 +19,15 @@ $('document').ready(function(){
 		});
 
 	$('#turn_on').click(function(){
-		$('#bulb_yellow').addClass('bulb-glow-yellow');
-		$('#bulb_red').addClass('bulb-glow-red');
-		$('#bulb_blue').addClass('bulb-glow-blue');
-		$('#bulb_green').addClass('bulb-glow-green');
-		$('#bulb_pink').addClass('bulb-glow-pink');
-		$('#bulb_orange').addClass('bulb-glow-orange');
+        $('#bulb_yellow').addClass('bulb-glow-yellow-after');
+		$('#bulb_red').addClass('bulb-glow-red-after');
+		$('#bulb_blue').addClass('bulb-glow-blue-after');
+		$('#bulb_green').addClass('bulb-glow-green-after');
+		$('#bulb_pink').addClass('bulb-glow-pink-after');
+		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').addClass('peach-after');
 		$('#envelope').fadeOut('slow');
 		$('.bannar').addClass('bannar-come');
-		$('#balloons_flying').fadeIn('slow');
-		$('.balloon-border').animate({top:-50},8000);
 		$('#b1,#b4,#b5,#b7,#b9').addClass('balloons-rotate-behaviour-one');
 		$('#b2,#b3,#b6,#b8').addClass('balloons-rotate-behaviour-two');
 		loopOne();
@@ -41,6 +39,7 @@ $('document').ready(function(){
 		loopSeven();
 		loopEight();
 		loopNine();
+		$(this).fadeOut('slow').delay(6000).promise().done();
 	});
 	function loopOne() {
 		var randleft = 300*Math.random();
