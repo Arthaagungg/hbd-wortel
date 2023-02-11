@@ -116,10 +116,7 @@ stay healthy and be blessed
 		var btncha = document.getElementById("b1");
 		var spancha = document.getElementsByClassName("close-cha")[0];
 
-                var modalsq = document.getElementById("myModal-sq");
-		var btnsq = document.getElementById("b2");
-		var spansq = document.getElementsByClassName("close-sq")[0];
-
+                
 		// When the user clicks the button, open the modal 
 
 		btnabdul.onclick = function() {
@@ -127,11 +124,7 @@ stay healthy and be blessed
 			modalcha.style.display = "block";
 
 		}
-                btnsq.onclick = function() {
-
-			modalsq.style.display = "block";
-
-		}
+                
 
 
 		// When the user clicks on <span> (x), close the modal
@@ -141,11 +134,7 @@ stay healthy and be blessed
 			modalcha.style.display = "none";
 
 		}
-                spansq.onclick = function() {
-
-			modalsq.style.display = "none";
-
-		}
+              
 
 		// When the user clicks anywhere outside of the modal, close it
 
@@ -156,11 +145,7 @@ stay healthy and be blessed
 				modalcha.style.display = "none";
 
 			}
-			else if (event.target == modalsq) {
-
-				modalsq.style.display = "none";
-
-			}
+			
 
 		}
 	</script>
