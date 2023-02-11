@@ -42,7 +42,6 @@
 	<div class="balloons text-center" id="b2">
 	</div>
 	<div class="balloons text-center" id="b3">
-		<h2 style="color:#D14D39;">D</h2>
 	</div>
 	<div class="balloons text-center" id="b4">
 		<h2 style="color:#8FAD00;">X</h2>
@@ -58,12 +57,12 @@
 	</div>
 
 	<!-- start modal -->
-	<div id="myModal-abdul" class="modal">
+	<div id="myModal-cha" class="modal">
 
 		<!-- Modal content -->
 		<div class="modal-content">
 			<div class="modal-header">
-				<span class="close-abdul">&times;</span>
+				<span class="close-cha">&times;</span>
 				<p>barakallah fii umrik siyel zheyeenk.</p>
 			</div>
 			<div class="modal-body">
@@ -73,7 +72,7 @@
 			take ur time. enjoy ur time.
 			akan selalu ada tempat untuk kamu kembalii.
 			dan yaa, kalo ada hal-hal yg maw dispill, apapun itu, termasuk masalah “balsem”, i’m all ears. 
-			eh ralat. we’re all ears laughing sehat-sehat bahagiaa selaluw worlyy kuuu 🫶
+			eh ralat. we’re all ears 😁 sehat-sehat bahagiaa selaluw worlyy kuuu 🫶
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -83,31 +82,68 @@
 
 	</div>
 	<!-- end modal -->
+<!-- start modal -->
+	<div id="myModal-sq" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close-sq">&times;</span>
+				<p>Happiest Birthday WorlyLuv.</p>
+			</div>
+			<div class="modal-body">
+				<p>wish U all the best..
+hv a wonderful year ahead..
+more happiness, luck and success for You..
+Love the good memories that we going through the tough times..
+Love the eagerness to spent your time with Us..
+keep in touch forever..
+stay healthy and be blessed
+				</p>
+			</div>
+			<div class="modal-footer">
+				<h3>SQ</h3>
+			</div>
+		</div>
+
+	</div>
+	<!-- end modal -->
+
 
 	<script>
 		
-var modalabdul = document.getElementById("myModal-abdul");
-	
+                var modalcha = document.getElementById("myModal-cha");
+		var btncha = document.getElementById("b1");
+		var spancha = document.getElementsByClassName("close-cha")[0];
 
-		var btnabdul = document.getElementById("b1");
-
-		// Get the <span> element that closes the modal
-
-		var spanabdul = document.getElementsByClassName("close-abdul")[0];
+                var modalsq = document.getElementById("myModal-sq");
+		var btnsq = document.getElementById("b2");
+		var spansq = document.getElementsByClassName("close-sq")[0];
 
 		// When the user clicks the button, open the modal 
 
 		btnabdul.onclick = function() {
 
-			modalabdul.style.display = "block";
+			modalcha.style.display = "block";
 
 		}
+                btnsq.onclick = function() {
+
+			modalsq.style.display = "block";
+
+		}
+
 
 		// When the user clicks on <span> (x), close the modal
 
 		spanabdul.onclick = function() {
 
-			modalabdul.style.display = "none";
+			modalcha.style.display = "none";
+
+		}
+                spansq.onclick = function() {
+
+			modalsq.style.display = "none";
 
 		}
 
@@ -115,9 +151,14 @@ var modalabdul = document.getElementById("myModal-abdul");
 
 		window.onclick = function(event) {
 
-			if (event.target == modalabdul) {
+			if (event.target == modalcha) {
 
-				modalabdul.style.display = "none";
+				modalcha.style.display = "none";
+
+			}
+			if (event.target == modalsq) {
+
+				modalsq.style.display = "none";
 
 			}
 
